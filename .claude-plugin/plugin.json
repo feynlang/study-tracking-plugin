@@ -1,0 +1,10 @@
+{
+  "name": "study-goal",
+  "version": "0.4.0",
+  "description": "학습 목표를 산출물 + 명확한 종료조건으로 변환하고 강제하는 워크플로. 일반 토픽과 링크 기반 학습 모두 지원, 온보딩 대시보드 + 다중 목표 + 일시중지/재개 + 샛길 질문 기록 + 자동 루브릭 생성 포함",
+  "author": {
+    "name": "feynlang"
+  },
+  "keywords": ["study", "learning", "goal-tracking", "deliverable", "korean"],
+  "license": "MIT"
+}

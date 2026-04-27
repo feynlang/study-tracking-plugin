@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/log_progress.py"
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/log_progress.sh"
           }
         ]
       }

@@ -1,9 +1,9 @@
 ---
-name: study-goal
+name: study-tracking
 description: Turn a vague learning goal into a concrete deliverable with clear completion criteria, then enforce actually producing that deliverable. Use this skill whenever the user expresses a learning intent — phrases like "공부하고 싶어", "배우고 싶어", "I want to learn X", "study X", "마스터하고 싶어", or describes wanting to understand a topic without a clear plan. This skill pushes the user through concept check → completion criteria → deliverable requirements → actual production, and auto-logs the process to artifact.md.
 ---
 
-# Study Goal
+# Study Tracking
 
 모호한 학습 의도를 **반드시 산출물로 이어지는** 워크플로로 변환한다.
 핵심 철학: **산출물 없이 "공부했다"라고 말하지 못하게 막는 것.**
@@ -39,7 +39,7 @@ Step 6: artifact.md 생성 + 작업 시작
 ### 온보딩 메시지 형식
 
 ```
-안녕하세요! **study-goal** 플러그인이에요 👋
+안녕하세요! **study-tracking** 플러그인이에요 👋
 
 "공부해야지"에서 끝나는 게 아니라, **실제로 만든 것**으로 끝나도록 도와줘요.
 
@@ -50,8 +50,8 @@ Step 6: artifact.md 생성 + 작업 시작
   4. 작업하는 동안 진행 상황을 자동으로 기록해요
 
 **명령어:**
-  /study-goal:new   → 새 학습 목표 시작
-  /study-goal:check → 진행 중인 목표 점검
+  /study-tracking:new   → 새 학습 목표 시작
+  /study-tracking:check → 진행 중인 목표 점검
 
 학습 로그는 ~/study-log/ 에 저장돼요. 방금 만들었어요.
 

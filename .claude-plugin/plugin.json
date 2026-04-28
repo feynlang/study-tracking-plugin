@@ -1,5 +1,5 @@
 {
-  "name": "study-goal",
+  "name": "study-tracking",
   "version": "0.1.0",
   "description": "학습 목표를 구체적인 산출물 + 명확한 종료 조건으로 변환하고, 진행 상황을 자동 추적하는 플러그인",
   "author": {

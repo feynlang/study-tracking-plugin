@@ -1,4 +1,4 @@
-# study-goal
+# study-tracking
 
 학습 목표 → 구체적 산출물 → 완료까지 추적하는 Claude Code 플러그인.
 
@@ -15,11 +15,11 @@
 ## 구조
 
 ```
-study-goal/
+study-tracking/
 ├── .claude-plugin/
 │   └── plugin.json          # 플러그인 메타데이터
 ├── skills/
-│   └── study-goal/
+│   └── study-tracking/
 │       ├── SKILL.md         # 메인 워크플로
 │       └── templates/       # 산출물 타입별 변형 생성 가이드
 │           ├── project.md
@@ -31,8 +31,8 @@ study-goal/
 │   ├── log_progress.sh      # 파일 수정 시 log.md 자동 갱신
 │   └── session_summary.sh   # 세션 종료 시 한 줄 추가
 ├── commands/
-│   ├── new.md               # /study-goal:new 명령어
-│   └── check.md             # /study-goal:check 명령어
+│   ├── new.md               # /study-tracking:new 명령어
+│   └── check.md             # /study-tracking:check 명령어
 └── README.md
 ```
 
@@ -55,14 +55,15 @@ Claude Code에서:
 
 ```
 /plugin marketplace add <이 폴더의 절대 경로>
-/plugin install study-goal
+/plugin install study-tracking
 ```
 
+### not yet
 또는 GitHub 레포로 푸시한 뒤:
 
 ```
-/plugin marketplace add <github-username>/study-goal
-/plugin install study-goal
+/plugin marketplace add <github-username>/study-tracking
+/plugin install study-tracking
 ```
 
 설치 후 **Claude Code를 재시작**해야 hook이 로드됨.
@@ -70,7 +71,7 @@ Claude Code에서:
 ### 동작 확인
 
 ```
-/study-goal:new
+/study-tracking:new
 ```
 
 명령이 보이면 설치 성공. 새 세션 안에서 "X 공부하고 싶어"라고
@@ -80,13 +81,13 @@ Claude Code에서:
 
 **새 목표 시작**:
 ```
-/study-goal:new
+/study-tracking:new
 ```
 또는 그냥 자연스럽게 "RAG 공부하고 싶어".
 
 **진행 점검**:
 ```
-/study-goal:check
+/study-tracking:check
 ```
 또는 "아까 그 RAG 목표 다 한 것 같은데 봐줘".
 
